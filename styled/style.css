@@ -468,6 +468,7 @@ margin-right: 1rem;
 }
 .benefit_content_btn {
     display: flex;
+    margin-bottom: 10%;
 }
 .benefit_content_prev, .benefit_content_next {
     display: flex;
@@ -497,8 +498,336 @@ margin-right: 1rem;
 .benefit_content_discription > h3 {
     margin-bottom: 8%;
 }
+.show {
+    color: #000000;
+}
+/*----- HAR -----*/
+.har_body {
+   padding: 3rem;
+   width: 100%;
+  }
+  
+  .har_body_lists {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  .har_body_title {
+    font-size: 32px;
+    color: var(--orange);
+    margin-bottom: 2rem;
+  }
+  
+  .har_body_list {
+    box-sizing: border-box;
+    flex: 1 0 25%; /* Кожен елемент займає 25% ширини контейнера */
+    height: 340px; /* Налаштуйте висоту за потребою */
+    
+    margin: 5px;
+  }
+ 
+  .har_body_list > h3 {
+    font-size: 28px;
+  }
+  .har_body_list > p {
+    color: #737B7D ;
+  }
+
+  /*------meet team ------*/
+
+  .meet_team_title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 12%;
+  }
+  .meet_team_sub_title {
+    font-size: 32px;
+    color: var(--orange);
+    margin-left: 12%;
+    margin-bottom: 5%;
+  }
+  .leadership-lists_title {
+    /* transform: rotate(90deg); */
+    /* transform-origin: left bottom; */
+  }
+.meet_team_leadership-lists {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6%;
+    margin-bottom: 10%;
+    margin-left: 3%;
+}
+.meet_team_leadership-lists::after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    border-top: 1px dashed #2f3034;
+    left: 12%;
+    bottom: -25%;
+}
+.leadership-lists_title {
+    width: 100px;        
+    writing-mode: vertical-rl; /* vertical-rl - означає вертикальний напрямок зліва направо */
+    transform: rotate(180deg); /* Поворот на 180 градусів для корекції напрямку тексту */
+    transform-origin: center right; /* Встановлюємо точку обертання в лівий нижній кут */
+    white-space: nowrap;
+    padding-right: 0.6%;
+     
+    font-weight: 300;
+    font-size: 32px;  
+    background: linear-gradient(var(--orange), var(--orange)) 70% 0/1em 69% no-repeat;   
+    box-decoration-break: clone;
+}
+
+.leadership-lists {
+    position: relative;
+    display: flex;
+    flex: 0 0 35%;
+    height: 345px;
+}
+.triangle-orange:after, .triangle-blue:after {
+    content: "";
+    position: absolute;
+    bottom:25px;
+    left: 127px;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    transform: rotate(-80deg);
+    border-left: 95px solid transparent; /* половина бажаної ширини трикутника */
+    border-right: 95px solid transparent; /* половина бажаної ширини трикутника */
+    border-bottom: 164.9px solid var(--orange); /* висота трикутника */
+}
+.triangle-blue:after {    
+    bottom:-15px;
+    left: 50px;    
+    transform: rotate(-10deg);   
+    border-bottom: 164.9px solid var(--blue-bg); /* висота трикутника */ 
+}
+.leadership_img {       
+    width: 287px;
+    height: 345px;
+    object-fit: cover;
+    background-color: #A8ACAD;
+}
+
+.leadership_name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+.har_arrow {
+    font-size: 24px;
+    color: var(--orange);
+    margin-right: 1rem;
+}
+.meat_engineers {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 365px;
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+.meat_engineers_title {
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    margin: auto 0;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 100%;
+    background-color: var(--orange);
+}
+.meat_engineers_lists { 
+    position: relative;   
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 3%;
+} 
+.meat_engineers_lists::after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    border-top: 1px dashed #2f3034;
+    left: 0;
+    bottom: -4%;
+    
+}
+.engineers_list img {
+    height: 216px;
+    width: 216px;
+}
+.engineers_list h4 {
+    max-width: 38%;
+}
+.meat_apply-now {
+    white-space: nowrap;
+    padding:  0 0.5rem;
+    margin-left: 50%;
+    border-radius: 20px;
+    color: #F7F7F7;
+    background-color: var(--orange);
+    
+}
 
 
+/*------ booking ----*/
+ .booking {
+    width: 100%;
+    height: 500px;    
+ }
+ .booking_body {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+ }
+ .booking_body_hotel {
+    flex: 0 0 65%;
+    padding: 10px;
+    
+ }
+ .booking_body_aside {
+    flex: 0 0 35%;
+    background-color: #314bb3;
+ }
+ .body_hotel_lists {
+
+ }
+.body_hotel_cart {
+   display: flex;
+   flex-direction: column;
+   width: 631px; 
+   /* height: 192px; */
+   padding: 10px 21px;
+   border: 1px solid #C9C9C9;
+   border-radius: 10px;
+   font-size: 16px;
+}
+.hotel_cart_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hotel_rate {
+  
+}
+.hotel_cart_body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.hotel_cart_img {
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 3px;
+    background-color: #BA4E1D;
+}
+.hotel_cart_body_discription {
+    max-width: 325px;
+}
+.hotel_cart_body_discription_title {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 14px;
+}
+.hotel_discription {
+    font-size: 12px;
+    display: flex;
+    overflow: hidden;
+    max-height: 80px;
+}
+.author_language {
+    color: #0090FF;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.cart_buttons {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    gap: 1rem;
+}
+.btn {
+    border: 1px solid #ff6000;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 900;
+}
+.hotel_cart_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 1.1rem;
+    max-width: 78px;    
+    border-radius: 5px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0;
+    background-color: #0090FF;    
+}
+.hotel_cart_button:hover {
+    background-color: rgba(0, 144, 255, 0.8);
+}
+.show_price {
+    color: rgba(255, 96, 0, 0.9);
+    background-color: #fff; 
+    border: 1px solid rgba(255, 96, 0, 0.9);
+}
+.show_price:hover {
+    color: rgba(255, 96, 0, 0.75);
+    border: 1px solid rgba(255, 96, 0, 0.75); 
+}
+.hotel_reserve {
+    color: #fff;
+    border: 1px solid #ff6000;
+    background-color: rgba(255, 96, 0, 0.9);
+}
+.hotel_reserve:hover {
+    background-color: rgba(255, 96, 0, 0.75); 
+}
+.hotel_moreInfo {
+    border: 1px solid #0BDA51;
+    background-color: rgba(11, 218, 81, 0.8);
+}
+.hotel_moreInfo:hover {
+    background-color: rgba(11, 218, 81, 0.65);
+}
+
+.hotel_card_footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.hotel_card_respond {
+    text-transform: uppercase;
+    padding-left: 0.5rem;
+    width: 110px;
+    height: 28px;
+    border: 1px solid #0090FF;
+    border-radius: 3px;
+    color: #FFF;
+    background-color: #0090FF;
+}
+.room_square {
+    color: #0090ff;
+}
+.price_range {
+    color: #006BBE;   
+}
      /*------- footer -------*/
 
 .footer {
