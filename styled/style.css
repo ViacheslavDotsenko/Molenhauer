@@ -687,6 +687,11 @@ margin-right: 1rem;
     height: 100%;
     margin: 0 auto;
  }
+ .booking_body_header {
+    height: 15%;
+    background-color: green;
+    margin-bottom: 1rem;
+ }
  .booking_body_hotel {
     flex: 0 0 65%;
     padding: 10px;
