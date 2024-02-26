@@ -367,26 +367,26 @@ margin-right: 1rem;
 
 }
 .expertise_list:first-child {
-    background-image: url(./source/img/list_bg_1.png);       
+    background-image: url(/source/img/list_bg_1.png);       
 }
 .expertise_list:nth-child(2) {
-    background-image: url(./source/img/list_bg_2.png);
+    background-image: url(/source/img/list_bg_2.png);
 }
 .expertise_list:nth-child(3) {
-    background-image: url(./source/img/list_bg_3.png);
+    background-image: url(/source/img/list_bg_3.png);
 }
 .expertise_list:nth-child(4) {
-    background-image: url(./source/img/list_bg_4.png);
+    background-image: url(/source/img/list_bg_4.png);
 }
 .expertise_list:nth-child(5) {
-    background-image: url(./source/img/list_bg_5.png);
+    background-image: url(/source/img/list_bg_5.png);
 }
 .expertise_list:nth-child(6) {
-    background-image: url(./source/img/list_bg_6.jpg);
+    background-image: url(/source/img/list_bg_6.jpg);
 }
 .expertise_list:hover {
     
-    background: url(./source/img/list_bg_hover.png);
+    background: url(/source/img/list_bg_hover.png);
     background-position: center;
     background-size: cover;
 }
