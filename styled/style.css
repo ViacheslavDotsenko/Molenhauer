@@ -138,7 +138,17 @@ margin-right: 1rem;
     color: var(--blue-bg);
     font-weight: 700;
 }
-/*------------- Body content ------  */
+@media (max-width: 1200px) {   
+    .logo, .header_iform{
+      transform: scale(0.7);
+    }
+    .header_nav {
+        transform: scale(0.9); 
+    }
+  }
+
+            /*------------- Body content ------  */
+
 .body_content {
     display: flex;
     flex-direction: column;
@@ -691,7 +701,37 @@ margin-right: 1rem;
     background-color: var(--orange);
     
 }
-/*----- contact us ------*/
+@media (max-width: 1475px) {   
+    .meet_team_leadership-lists {
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+    .meet_team_leadership-lists::after {
+       bottom: -6%; 
+    }
+    .leadership-lists_title { 
+        transform: rotate(-90deg) translateY(20px);        
+    }
+    .meat_engineers {
+       width: 40%; 
+       margin-left: 40%;
+       transform: translate(-50%);
+    }
+    .meat_engineers_lists {
+        flex-direction: column;
+        max-width: 400px;
+        justify-content: center;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+  }
+
+
+        /*----- contact us ------*/
+
+
 .contactUs {
     height: 400px;
     width: 100%;
