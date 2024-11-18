@@ -772,6 +772,20 @@ margin-right: 1rem;
     .introductory_content-list:last-child {
         margin-top: 2rem;
     }
+    .media_rhombus:first-child {
+        left: 13%;
+        top: 22%;       
+    }
+    .media_rhombus:nth-child(2) {       
+        top: -20%;       
+    }
+    .media_rhombus:nth-child(3) {        
+        top: -15%; 
+        left: 13%;       
+    }
+    .media_rhombus:nth-child(4) {      
+        top: 14%;        
+    }
   
     .expertise_body_card {
         flex-direction: column;
