@@ -885,6 +885,12 @@ margin-right: 1rem;
 }
   
   @media (max-width: 920px) {
+    .introductory_title {        
+        font-size: 58px;        
+    }
+    .introductory_content-lists {
+        font-size: 20px;
+    }
     .expertise_main {    
         padding: 0 1rem;  
     }
