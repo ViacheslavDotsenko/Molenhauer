@@ -807,14 +807,16 @@ margin-right: 1rem;
         background-position: center;
     }
     .benefit_content_discription {
-        margin-right: 50%;
-        transform: translate(50%);
+       
+        padding-left: 0;
+        width: 100%;
     }
     .benefit_content_aditional-lists {
         position: relative;
-        left: 0;
+        left: 1rem;
         flex-direction: column;
         height: 100%;
+        width: 400px;
     }
     .benefit_content_btn {
         display: none;
